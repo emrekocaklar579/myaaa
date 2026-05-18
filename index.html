@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Selçuksports - Selcuksports Maç İzle - Canlı Maç izle</title>
-    <meta name="description" content="Selçuksports izle, Selcuksports, Selçuksports maç izle ve canlı maç izle aramaları için hazırlanmış spor yayın rehberi. Güncel giriş, cihaz uyumluluğu, HD yayın deneyimi ve maç izleme önerileri.">
+    <title>Selçuksports İzle | Selcuksports Maç İzle ve Canlı Spor Rehberi</title>
+    <meta name="description" content="Selçuksports izle, Selcuksports, Selçuksports maç izle ve canlı maç izle aramaları için hazırlanmış spor yayın rehberi. Fiyatlar, test al, cihaz uyumluluğu, HD yayın deneyimi ve maç izleme önerileri.">
     <meta name="keywords" content="selçuksports, selcuksports, selcuk sports, selçuksports izle, selçuksports maç izle, selcuksports izle, canlı maç izle, maç izle, canlı spor izle, spor yayını, güncel giriş">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="language" content="Turkish">
@@ -13,7 +13,7 @@
     <link rel="canonical" href="/" />
 
     <meta property="og:title" content="Selçuksports İzle | Selcuksports Maç İzle Rehberi">
-    <meta property="og:description" content="Selçuksports, Selcuksports, Selçuksports maç izle ve canlı maç izle aramaları için güncel spor yayın rehberi.">
+    <meta property="og:description" content="Selçuksports, Selcuksports, Selçuksports maç izle ve canlı maç izle aramaları için fiyatlar, test al ve güncel spor yayın rehberi.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="/">
     <meta property="og:site_name" content="Selçuksports Rehberi">
@@ -75,6 +75,29 @@
       }
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Selçuksports Canlı Maç İzleme Paketleri",
+      "description": "Selçuksports izle, Selcuksports maç izle, canlı maç izle ve spor yayını deneyimi için 6 aylık, 12 aylık ve test seçenekleri.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Selçuksports Rehberi"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "TRY",
+        "lowPrice": "0",
+        "highPrice": "2000",
+        "offerCount": "3",
+        "availability": "https://schema.org/InStock",
+        "url": "/#fiyatlar"
+      }
+    }
+    </script>
+
 
     <script type="application/ld+json">
     {
@@ -204,7 +227,7 @@
         .section-desc { max-width: 820px; margin: 0 auto 50px; color: var(--text-gray); line-height: 1.8; font-size: 17px; }
         .main-section, .device-section, .channel-section, .faq-section, .guide-section { padding: 100px 5%; text-align: center; }
         .device-section, .guide-section { background: #080808; }
-        .main-section h2, .device-section h2, .channel-section h2, .faq-section h2, .guide-section h2 { font-size: 38px; margin: 10px 0 20px; }
+        .main-section h2, .device-section h2, .channel-section h2, .faq-section h2, .guide-section h2, .pricing-section h2 { font-size: 38px; margin: 10px 0 20px; }
 
         .cards-grid, .device-grid, .channel-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
         .card, .device-card, .channel-card, .faq-box { background: #111; border: 1px solid #222; border-radius: 22px; padding: 35px 25px; transition: 0.3s; }
@@ -214,6 +237,80 @@
         .card p, .device-card p, .channel-card p, .faq-box p { color: var(--text-gray); line-height: 1.7; font-size: 15px; }
         .channel-card { font-size: 38px; }
         .channel-card h3 { font-size: 18px; margin-top: 15px; }
+
+
+
+        .pricing-section {
+            padding: 100px 5%;
+            text-align: center;
+            background: #050505;
+        }
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 50px auto 0;
+        }
+        .plan-box {
+            background: var(--card-bg);
+            padding: 50px 30px;
+            border-radius: 24px;
+            border: 1px solid var(--soft-border);
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .plan-box:hover {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+            box-shadow: 0 0 35px rgba(0,242,255,0.08);
+        }
+        .plan-box.popular {
+            border-color: var(--primary);
+            background: linear-gradient(145deg, #111, #1a1a1a);
+        }
+        .popular-badge {
+            position: absolute;
+            top: 20px;
+            right: -42px;
+            background: var(--primary);
+            color: #000;
+            padding: 6px 42px;
+            font-size: 11px;
+            font-weight: 800;
+            transform: rotate(45deg);
+        }
+        .plan-box h3 { font-size: 24px; margin-bottom: 10px; }
+        .plan-box .price {
+            font-size: 48px;
+            font-weight: 800;
+            margin: 20px 0;
+            color: var(--primary);
+        }
+        .plan-box .price span { font-size: 18px; color: #fff; }
+        .plan-box ul { list-style: none; margin-bottom: 30px; text-align: left; }
+        .plan-box ul li {
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            line-height: 1.5;
+        }
+        .plan-box ul li i { color: var(--primary); }
+        .buy-btn {
+            display: block;
+            background: #fff;
+            color: #000;
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 800;
+            transition: 0.3s;
+        }
+        .plan-box:hover .buy-btn,
+        .plan-box.popular .buy-btn { background: var(--primary); }
 
         .keyword-section {
             padding: 100px 5%;
@@ -258,7 +355,7 @@
             .nav-links { display: none; }
             .hero h1 { font-size: 39px; }
             .hero p { font-size: 16px; }
-            .main-section h2, .device-section h2, .channel-section h2, .faq-section h2, .guide-section h2, .keyword-content h2, .final-cta h2 { font-size: 28px; }
+            .main-section h2, .device-section h2, .channel-section h2, .faq-section h2, .guide-section h2, .pricing-section h2, .keyword-content h2, .final-cta h2 { font-size: 28px; }
             .cta-main, .cta-secondary { width: 100%; text-align: center; }
         }
     </style>
@@ -269,6 +366,8 @@
         <div class="logo">SELÇUK<span>SPORTS</span></div>
         <div class="nav-links">
             <a href="#selcuksports">Selçuksports</a>
+            <a href="#fiyatlar">Fiyatlar</a>
+            <a href="#test">Test Al</a>
             <a href="#macizle">Maç İzle</a>
             <a href="#cihazlar">Cihazlar</a>
             <a href="#rehber">Rehber</a>
@@ -307,6 +406,58 @@
             <div class="trust-box"><i class="fas fa-wifi"></i><strong>HD Deneyim</strong><span>Stabil bağlantı önerileri</span></div>
         </div>
     </section>
+
+    <section class="pricing-section" id="fiyatlar">
+        <span class="section-tag">Fiyatlar ve Test</span>
+        <h2>Selçuksports Fiyatları ve Paket Seçenekleri</h2>
+        <p class="section-desc">
+            Selçuksports izle, Selcuksports maç izle ve canlı maç izle deneyimi için 6 aylık, 12 aylık ve test seçeneklerini inceleyebilirsiniz.
+            Test al seçeneğiyle yayın kalitesini, cihaz uyumluluğunu ve maç saatlerindeki performansı önceden kontrol edebilirsiniz.
+        </p>
+
+        <div class="plans">
+            <div class="plan-box">
+                <h3>6 Aylık Selçuksports Paket</h3>
+                <div class="price">1500 <span>TL</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Selçuksports izle odaklı spor deneyimi</li>
+                    <li><i class="fas fa-check"></i> HD ve yüksek kalite maç izleme desteği</li>
+                    <li><i class="fas fa-check"></i> Telefon, tablet, Smart TV ve bilgisayar uyumu</li>
+                    <li><i class="fas fa-check"></i> Maç saatlerinde hızlı destek yönlendirmesi</li>
+                    <li><i class="fas fa-check"></i> Selcuksports maç izle aramaları için uygun kullanım</li>
+                </ul>
+                <a href="https://iptv-guest-login.iptvturkiyeresmi.com/buy?id=cmoykp40d0000odkk19jzw32r" class="buy-btn" target="_blank" rel="noopener noreferrer">Selçuksports Satın Al</a>
+            </div>
+
+            <div class="plan-box popular">
+                <div class="popular-badge">EN POPÜLER</div>
+                <h3>12 Aylık Selçuksports Paket</h3>
+                <div class="price">2000 <span>TL</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Selçuksports maç izle için yıllık avantaj</li>
+                    <li><i class="fas fa-check"></i> Canlı maç izle deneyiminde daha ekonomik kullanım</li>
+                    <li><i class="fas fa-check"></i> HD spor yayını ve düşük gecikme odaklı deneyim</li>
+                    <li><i class="fas fa-check"></i> Tüm cihazlarda kurulum ve kullanım desteği</li>
+                    <li><i class="fas fa-check"></i> Selcuksports izle aramaları için güçlü spor paketi</li>
+                </ul>
+                <a href="https://iptv-guest-login.iptvturkiyeresmi.com/buy?id=cmoykqp040001odkkfschfkro" class="buy-btn" target="_blank" rel="noopener noreferrer">Selçuksports Satın Al</a>
+            </div>
+
+            <div class="plan-box" id="test">
+                <h3>Selçuksports Test Al</h3>
+                <div class="price">0 <span>TL</span></div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Satın almadan önce yayın kalitesini dene</li>
+                    <li><i class="fas fa-check"></i> Selçuksports izle deneyimini cihazında kontrol et</li>
+                    <li><i class="fas fa-check"></i> Canlı maç izle için bağlantı ve görüntü kalitesini test et</li>
+                    <li><i class="fas fa-check"></i> Mobil, Smart TV ve bilgisayar uyumluluğunu gör</li>
+                    <li><i class="fas fa-check"></i> Selcuksports maç izle öncesi hızlı deneme imkanı</li>
+                </ul>
+                <a href="https://iptv-guest-login.iptvturkiyeresmi.com/buying/test" target="_blank" rel="noopener noreferrer" class="buy-btn">Test Al</a>
+            </div>
+        </div>
+    </section>
+
 
     <section class="keyword-section" id="selcuksports">
         <div class="keyword-wrapper">
@@ -442,8 +593,8 @@
             spor yayını deneyimini, cihaz uyumluluğunu, güncel giriş mantığını ve HD maç izleme önerilerini tek yerde toplar.
         </p>
         <div class="hero-buttons">
-            <a href="#selcuksports" class="cta-main">SELÇUKSPORTS REHBERİ</a>
-            <a href="https://t.me/+CVhb2XpC6htmNTI1" target="_blank" rel="noopener noreferrer" class="cta-secondary"><i class="fab fa-telegram"></i> GÜNCEL BİLGİ AL</a>
+            <a href="#fiyatlar" class="cta-main">SELÇUKSPORTS FİYATLARI</a>
+            <a href="#test" class="cta-secondary"><i class="fab fa-telegram"></i> TEST AL</a>
         </div>
     </section>
 
@@ -452,6 +603,8 @@
         <p style="color: var(--text-gray); margin-top: 10px;">Selçuksports canlı spor rehberi © 2026</p>
         <div class="footer-links">
             <a href="#selcuksports">Selçuksports</a>
+            <a href="#fiyatlar">Selçuksports Fiyatları</a>
+            <a href="#test">Test Al</a>
             <a href="#macizle">Selçuksports Maç İzle</a>
             <a href="#cihazlar">Cihaz Uyumluluğu</a>
             <a href="#rehber">SEO Rehberi</a>
